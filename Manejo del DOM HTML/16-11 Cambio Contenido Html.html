@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='titulo'>Manejo DOM con JavaScript</h1>
+    <button onclick="mostrar()">Mostrar</button>
+    <br/>
+
+    <script>
+       function mostrar(){
+           for(i = 1; i<=10;i++ ){
+                document.getElementById('titulo').innerHTML += '<br/>' +i+ ' Nuevo Título';
+
+           }
+       } 
+    </script>
+
+</body>
+</html>

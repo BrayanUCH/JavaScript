@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='titulo'> Manejo DOM con JavaScript</h1>
+    <!-- 2 <h1 onclick="cambiarTexto()" id='titulo'>Manejo DOM con JavaScript</h1>-->
+    <br/>
+    <div id='mostrar'></div>
+    <script>
+        //esta parte no se necesita si se usa la forma de la linea 9
+        //que accina el evento cuando declara el h1
+        document.getElementById('titulo').onclick = cambiarTexto;
+
+        function cambiarTexto(){
+            document.getElementById('mostrar').innerHTML = 'Nuevo contenido';
+        }
+
+    </script>
+</body>
+</html>

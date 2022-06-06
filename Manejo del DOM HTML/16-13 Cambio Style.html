@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='titulo'>Manejo DOM con JavaScript</h1>
+    
+    <button onclick="mostrar()">Mostrar</button>
+    
+    <br/>
+
+    <script>
+        function mostrar(){
+            if(document.getElementById('titulo').style.color =='red'){
+                document.getElementById('titulo').style.color = 'blue'; 
+
+            }else if(document.getElementById('titulo').style.color == 'black'){
+                document.getElementById('titulo').style.color = 'red';
+            
+            }else{
+                document.getElementById('titulo').style.color = 'black';
+            }
+       } 
+    </script>
+</body>
+</html>
